@@ -1,0 +1,25 @@
+page {
+	includeCSS {
+		animate = EXT:theme_bootstrap_restart/Resources/Public/Css/animate.css
+		flexslider = EXT:theme_bootstrap_restart/Resources/Public/Css/woothemes-FlexSlider-06b12f8/flexslider.css
+		prettyPhoto = EXT:theme_bootstrap_restart/Resources/Public/Css/prettyPhoto_3.1.5/prettyPhoto.css
+		style = EXT:theme_bootstrap_restart/Resources/Public/Css/style.css
+		fontawesome = EXT:theme_bootstrap_restart/Resources/Public/Contrib/font-awesome-4.3.0/css/font-awesome.css
+		fontawesome {
+			excludeFromConcatenation = 1
+			disableCompression = 1
+		}
+		theme = EXT:theme_bootstrap_restart/Resources/Private/Dyncss/import.less
+	}
+}
+
+[globalVar = LIT:1 = {$themes.mode.isProduction}]
+	page {
+		includeCSS {
+			fontawesome = //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
+			fontawesome {
+				external = 1
+			}
+		}
+	}
+[global]

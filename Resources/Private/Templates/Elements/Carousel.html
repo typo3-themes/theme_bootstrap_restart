@@ -1,0 +1,12 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+{namespace vhs=FluidTYPO3\Vhs\ViewHelpers}
+<div id="main_flexslider_{data.uid}" class="flexslider">
+	<!-- Wrapper for slides -->
+	<ul class="slides">
+		<f:for each="{data.tx_gridelements_view_children}" as="slide-content" iteration="slide">
+			<f:format.raw>{theme:arrayIndex(object: data, index:
+				'tx_gridelements_view_child_{slide-content.uid}')}
+			</f:format.raw>
+		</f:for>
+	</ul>
+</div>

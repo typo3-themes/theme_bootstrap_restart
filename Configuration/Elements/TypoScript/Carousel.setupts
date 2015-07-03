@@ -1,0 +1,28 @@
+lib.gridelements {
+	carousel {
+		setCurrent.postUserFunc.responsiveMapping >
+		cObject = FLUIDTEMPLATE
+		cObject {
+			file = EXT:theme_bootstrap_restart/Resources/Private/Templates/Elements/Carousel.html
+		}
+		columns.0.renderObj >
+		columns.0.renderObj = COA
+		columns.0.renderObj {
+			stdWrap.dataWrap = <li id="c{field:uid}" class="item">|</li>
+			10 =< tt_content
+			10.stdWrap.innerWrap.cObject.default.10.cObject.default.value = <div id="inner-c{field:uid}"
+			10.gridelements_pi1.20.10.setup {
+				2ColumnGrid.innerWrap.cObject.default.10.cObject.default.value = <div id="inner-c{field:uid}"
+				3ColumnGrid.innerWrap.cObject.default.10.cObject.default.value = <div id="inner-c{field:uid}"
+				4ColumnGrid.innerWrap.cObject.default.10.cObject.default.value = <div id="inner-c{field:uid}"
+				container.innerWrap.cObject.default.10.cObject.default.value = <div id="inner-c{field:uid}"
+				row.cObject.default.10.cObject.default.value = <div id="inner-c{field:uid}"
+				singleColumn.innerWrap.cObject.default.10.cObject.default.value = <div id="inner-c{field:uid}"
+				singleColumnHeaderFooter.innerWrap.cObject.default.10.cObject.default.value = <div id="inner-c{field:uid}"
+				singleColumnHorinzontal.innerWrap.cObject.default.10.cObject.default.value = <div id="inner-c{field:uid}"
+			}
+		}
+	}
+}
+
+tt_content.gridelements_pi1.20.10.setup.carousel < lib.gridelements.carousel

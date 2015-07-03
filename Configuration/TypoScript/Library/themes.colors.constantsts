@@ -1,0 +1,119 @@
+#############################################
+# Colors: Color constants
+#############################################
+
+# #customcategory=colors=Theme: Color settings
+# customsubcategory=general=General colors
+# customsubcategory=gray=Gray colors
+# customsubcategory=message=Message colors
+
+# General colors
+#############################################
+
+# cat=colors,basic/general/; type=color; label= Primary color 1
+themes.configuration.colors.primary = #478091
+
+# cat=colors,basic/general/; type=color; label= Secondary color 1
+themes.configuration.colors.secondary = #376370
+
+# cat=colors,advanced/general/; type=color; label= Primary color 2
+themes.configuration.colors.primary2 = #72a53b
+
+# cat=colors,advanced/general/; type=color; label= Secondary color 2
+themes.configuration.colors.secondary2 = #678C3E
+
+# cat=colors,advanced/general/; type=color; label= Primary color 3
+themes.configuration.colors.primary3 = #00B4FF
+
+# cat=colors,advanced/general/; type=color; label= Secondary color 3
+themes.configuration.colors.secondary3 = #46859F
+
+# cat=colors,advanced/general/; type=color; label= Primary color 4
+themes.configuration.colors.primary4 = #515151
+
+# cat=colors,advanced/general/; type=color; label= Secondary color 4
+themes.configuration.colors.secondary4 = #454545
+
+# cat=colors,advanced/general/; type=color; label= Primary color 5
+themes.configuration.colors.primary5 = #E74C3C
+
+# cat=colors,advanced/general/; type=color; label= Secondary color 5
+themes.configuration.colors.secondary5 = #B45B52
+
+# cat=colors,advanced/general/; type=color; label= Primary color 6
+themes.configuration.colors.primary6 = #1ABC9C
+
+# cat=colors,advanced/general/; type=color; label= Secondary color 6
+themes.configuration.colors.secondary6 = #3A8576
+
+# cat=colors,advanced/general/; type=color; label= Primary color 7
+themes.configuration.colors.primary7 = #8E44AD
+
+# cat=colors,advanced/general/; type=color; label= Secondary color 7
+themes.configuration.colors.secondary7 = #7D4297
+
+# cat=colors,basic/general/; type=color; label= Link color
+themes.configuration.colors.link = #337AB7
+
+# cat=colors,basic/general/; type=color; label= Text color
+themes.configuration.colors.text = #000
+
+
+
+# Gray colors
+#############################################
+
+# cat=colors,advanced/gray/; type=color; label= Gray color - lighten(#000, 33.5%)
+themes.configuration.colors.gray = #555555
+
+# cat=colors,advanced/gray/; type=color; label= Gray dark color - lighten(#000, 20%)
+themes.configuration.colors.grayDark = #333333
+
+# cat=colors,advanced/gray/; type=color; label= Gray darker color - lighten(#000, 13.5%)
+themes.configuration.colors.grayDarker = #222222
+
+# cat=colors,advanced/gray/; type=color; label= Gray light color - lighten(#000, 46.7%)
+themes.configuration.colors.grayLight = #999999
+
+# cat=colors,advanced/gray/; type=color; label= Gray lighter color - lighten(#000, 93.5%)
+themes.configuration.colors.grayLighter = #EEEEEE
+
+
+
+# Message colors
+#############################################
+
+# cat=colors,advanced/message/; type=color; label= Message: Success color
+themes.configuration.colors.success = #5CB85C
+
+# cat=colors,advanced/message/; type=color; label= Message: Notice and information color
+themes.configuration.colors.information = #5BC0DE
+
+# cat=colors,advanced/message/; type=color; label= Message: Warning color
+themes.configuration.colors.warning = #F0AD4E
+
+# cat=colors,advanced/message/; type=color; label= Message: Error color
+themes.configuration.colors.error = #D9534F
+
+
+# Panel colors
+#############################################
+
+# cat=colors,advanced/panels/; type=color; label= Green color
+themes.configuration.colors.green = #72a53b
+
+# cat=colors,advanced/panels/; type=color; label= Blue color
+themes.configuration.colors.blue = #00B4FF
+
+# cat=colors,advanced/panels/; type=color; label= Dark color
+themes.configuration.colors.dark = #515151
+
+# cat=colors,advanced/panels/; type=color; label= Red color
+themes.configuration.colors.red = #E74C3C
+
+# cat=colors,advanced/panels/; type=color; label= Turquoise color
+themes.configuration.colors.turquoise = #1ABC9C
+
+# cat=colors,advanced/panels/; type=color; label= Amethyst color
+themes.configuration.colors.amethyst = #8E44AD
+

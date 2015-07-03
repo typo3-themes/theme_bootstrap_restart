@@ -1,0 +1,92 @@
+# Insert colPos 0 in main content
+lib.content.main = COA
+lib.content.main {
+	50.slide = -1
+}
+
+# Insert colPos 1 in menu content
+lib.content.menu = COA
+lib.content.menu {
+	50.slide = -1
+	50.slide.collect = -1
+	50.slide.collectReverse = 1
+}
+
+# Insert colPos 2 in menu content
+lib.content.sidebar {
+	50.slide = -1
+}
+
+# Insert colPos 3 in feature content
+lib.content.feature {
+	50.slide = -1
+}
+
+# Insert colPos 4 in extended content
+lib.content.extended {
+	wrap = <section id="footer_teasers_wrapper">|</section>
+	50.slide = -1
+}
+
+tt_content.stdWrap.innerWrap.cObject.default.20.10.value = csc-default content
+tt_content.image.20.1.layout.data.element = <img src="###SRC###"###SOURCECOLLECTION######PARAMS######ALTPARAMS######SELFCLOSINGTAGSLASH### class="img-responsive">
+
+lib.bullets {
+	wrap = <ul>|</ul>
+	split.1.wrap = <li class="odd">|</li>
+	split.2.wrap = <li class="even">|</li>
+}
+
+tt_content.bullets {
+	wrap = <div class="item animated fadeInDown first">|</div>
+	10.wrap = <div class="head"><h4>|</h4><div class="arrow"></div></div>
+	20 {
+		wrap = <div class="sceleton">|</div>
+		10.wrap = <h5>|</h5>
+	}
+
+	30.wrap >
+}
+
+tt_content.menu.20.7 >
+tt_content.menu.20.7 = HMENU
+tt_content.menu.20.7 {
+	special = list
+	special.value.field = pages
+	maxItems = 5
+	1 = TMENU
+	1 {
+		NO {
+			allStdWrap.outerWrap = <li class="services__item colorset-{field:layout}"><div class="services-item__body">|</div></li>
+			allStdWrap.outerWrap.insertData = 1
+			allStdWrap.prepend = TEXT
+			allStdWrap.prepend {
+				field = tx_themes_icon
+				ifEmpty = {$lib.icons.menu.default-icon}
+				stdWrap.postUserFunc = KayStrobach\Themes\Frontend\CssClassMapper->mapGenericToFramework
+				stdWrap.postUserFunc {
+					iconMapping =< lib.icons.cssMap
+				}
+
+				required = 1
+				noTrimWrap = |<i class="services-item__icon | fa-3x" aria-hidden="true"></i> |
+			}
+			allWrap = <div class="services-item__content">|</div>
+			ATagParams = class="services-item__link"
+			stdWrap.override = >>
+			stdWrap.override.if.isFalse.field = subtitle
+			before.cObject = TEXT
+			before.cObject {
+				field = title
+				override.field = subtitle
+				wrap = <p class="services-item__caption">|</p>
+			}
+		}
+		CUR < .NO
+		CUR = 1
+		CUR.allStdWrap.outerWrap = <li class="services__item colorset-{field:layout} current active"><div class="services-item__body">|</div></li>
+		CUR.doNotLinkIt = 1
+		CUR.linkWrap = <a class="services-item__link" name="services__item-active">|</a>
+	}
+	wrap = <ul class="services">|</ul>
+}

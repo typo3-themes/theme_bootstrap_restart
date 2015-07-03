@@ -1,0 +1,11 @@
+lib.content.cssMap.behaviour {
+
+	singleColumn {
+		team = team
+	}
+
+	singleColumnHorizontal {
+		team = team
+	}
+
+}

@@ -1,0 +1,1 @@
+lib.menu.sub.wrap = <ul class="{$themes.configuration.menu.sub.cssClasses}"> | </ul>

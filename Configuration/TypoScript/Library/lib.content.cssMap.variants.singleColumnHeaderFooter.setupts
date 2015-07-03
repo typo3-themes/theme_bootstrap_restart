@@ -1,0 +1,8 @@
+lib.content.cssMap.variants.singleColumnHeaderFooter {
+	panel-green = panel panel-green
+	panel-blue = panel panel-blue
+	panel-dark = panel panel-dark
+	panel-red = panel panel-red
+	panel-turquoise = panel panel-turquoise
+	panel-amethyst = panel panel-amethyst
+}

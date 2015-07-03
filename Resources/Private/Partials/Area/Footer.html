@@ -1,0 +1,28 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<div xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns="http://www.w3.org/1999/xhtml"
+     lang="en">
+	<f:section name="Default">
+		<!-- theme_bootstrap_highland: Partials/Area/Footer.html [begin] -->
+		<footer>
+			<f:cObject typoscriptObjectPath="lib.content.extended"/>
+			<section class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="ool-sm-6 col-md-6">
+							<f:cObject typoscriptObjectPath="lib.footer.copyright"/>
+						</div>
+						<div class="text-right ool-sm-6 col-md-6">
+							<f:format.htmlentitiesDecode>{theme:constant(constant:
+								'themes.configuration.footer.address')}
+							</f:format.htmlentitiesDecode>
+							<f:link.email email="{theme:constant(constant: 'themes.configuration.footer.email')}">
+								{theme:constant(constant: 'themes.configuration.footer.email')}
+							</f:link.email>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+		<!-- theme_bootstrap_highland: Partials/Area/Footer.html [end] -->
+	</f:section>
+</div>

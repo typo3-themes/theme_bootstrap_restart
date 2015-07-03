@@ -1,0 +1,74 @@
+# Settings for the development system
+
+page {
+	includeJS {
+		scrolltopcontrol = EXT:theme_bootstrap_restart/Resources/Public/JavaScript/modernizr.custom.48287.js
+		scrolltopcontrol {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+	}
+	includeJSFooter {
+		jquery = EXT:theme_bootstrap_restart/Resources/Public/JavaScript/jquery-1.9.0.min.js
+		jquery {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		bootstrap = EXT:theme_bootstrap/Resources/Public/Contrib/BsCompressed/bootstrap.min.js
+		bootstrap {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		flexslider = EXT:theme_bootstrap_restart/Resources/Public/JavaScript/woothemes-FlexSlider-06b12f8/jquery.flexslider-min.js
+		flexslider {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		prettyPhoto = EXT:theme_bootstrap_restart/Resources/Public/JavaScript/prettyPhoto_3.1.5/jquery.prettyPhoto.js
+		prettyPhoto {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		isotope =  EXT:theme_bootstrap_restart/Resources/Public/JavaScript/isotope/jquery.isotope.min.js
+		isotope {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		totop =  EXT:theme_bootstrap_restart/Resources/Public/JavaScript/jquery.ui.totop.js
+		totop {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		easing =  EXT:theme_bootstrap_restart/Resources/Public/JavaScript/easing.js
+		easing {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		wow =  EXT:theme_bootstrap_restart/Resources/Public/JavaScript/wow.min.js
+		wow {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		snap =  EXT:theme_bootstrap_restart/Resources/Public/JavaScript/snap.svg-min.js
+		snap {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+		restart =  EXT:theme_bootstrap_restart/Resources/Public/JavaScript/restart_theme.js
+		restart {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+	}
+}

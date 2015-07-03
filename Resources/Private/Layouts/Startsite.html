@@ -1,0 +1,36 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+<!-- theme_bootstrap_highland: Layouts/Startsite.html [begin] -->
+<header>
+	<div class="container">
+		<div id="menuMain" class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<img src="typo3conf/ext/theme_bootstrap_restart/Resources/Public/Images/restart_logo.png" alt="optional logo" height="90" width="90">
+					<span class="logo_title">&#0123;re&#0125;<strong>start</strong></span>
+					<span class="logo_subtitle">a multipurpose template</span>
+				</a>
+				<a class="btn btn-navbar btn-default navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="nb_left pull-left">
+							<span class="fa fa-reorder"></span>
+						</span>
+					<span class="nb_right pull-right">menu</span>
+				</a>
+			</div>
+			<div id="navbar-main" class="navbar-collapse collapse">
+				<f:cObject typoscriptObjectPath="lib.menu.main"/>
+			</div>
+		</div>
+	</div>
+</header>
+<section id="slider_wrapper" class="slider_wrapper full_page_photo">
+	<f:cObject typoscriptObjectPath="lib.content.feature"/>
+</section>
+<div class="main">
+	<f:render section="Default"/>
+	<f:render partial="Area/Footer" section="Default" arguments="{_all}"/>
+</div>
+<a href="#" id="toTop">
+	<span id="toTopHover"></span>
+	To Top
+</a>
+<!-- theme_bootstrap_highland: Layouts/Startsite.html [end] -->

@@ -12,7 +12,6 @@ AFTER THAT we import the custom_variables.less which is Bootstrap variables.less
 that we copied and altered in order to override the original variables and make our custom bootstrap skin.
 This way we leave Bootstrap unharmed.
 --------------------------------------------------------------*/
-@import "../twitter-bootstrap/less/bootstrap.less";
 @import "custom_variables.less";
 
 // Theme Mixins
@@ -742,7 +741,7 @@ section.parallax-window {
     text-align: center;
     background-color: #000;
     background-color: @gray-darker;
-    background: url(images/backgrounds/wild_oliva_dark.png);
+    background: url(../../../Public/Images/backgrounds/wild_oliva_dark.png);
     color: #cccccc;
     padding: 40px;
     .theme-transition;
@@ -1239,7 +1238,7 @@ ul.portfolio_filters {
                     line-height: 22px;
                     }    
                 i {
-                   background: url(images/backgrounds/wild_oliva__light.png);
+                   background: url(../../../Public/Images/backgrounds/wild_oliva_light.png);
                    .img-circle;
                     padding: 10px;
                     line-height: 33px;
@@ -1299,7 +1298,7 @@ ul.portfolio_filters {
         position: relative;
         left: 3px;
         top: 5px;
-        background: url(images/portfolio/rating_stars.png);
+        background: url(../../../Public/Images/portfolio/rating_stars.png);
         &.r0 {background-position: 0 240px;}
         &.r1 {background-position: 0 218px;}
         &.r2 {background-position: 0 195px;}
@@ -1569,7 +1568,7 @@ footer {
     margin-top: 40px;
     color: #fff;
     border-top: solid 2px #fff;
-    background: url(images/backgrounds/wild_oliva_dark.png);
+    background: url(../../../Public/Images/backgrounds/wild_oliva_dark.png);
     background: none @gray-darker;
     a {
         &:link, &:visited {}
@@ -1685,7 +1684,7 @@ li.media {
                 display: block;
                 width: 60px;
                 height: 60px;
-                border: solid 0px #33333;
+                border: 0px solid #333333;
                 overflow: hidden;
                 .img-rounded;
                 img {
@@ -1754,13 +1753,13 @@ blockquote {
 	height:51px;
 	border:none;
 	text-indent:100%;
-	background:url(images/ui.totop.png) no-repeat left top;
+	background:url(../../../Public/Images/ui.totop.png) no-repeat left top;
     .opacity(50);
     z-index: 2;
 }
 
 #toTopHover {
-	background:url(images/ui.totop.png) no-repeat left -51px;
+	background:url(../../../Public/Images/ui.totop.png) no-repeat left -51px;
 	width:51px;
 	height:51px;
 	display:block;
